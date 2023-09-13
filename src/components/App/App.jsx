@@ -73,7 +73,7 @@ export class App extends Component {
     return (
       <Section>
         <Title>Phonebook</Title>
-        <ContactForm onSubmit={this.addContact} contacts={this.state} />
+        <ContactForm onSubmit={this.addContact}  />
         
         <SecondTitle>Contacts</SecondTitle>
         <Filter value={this.state.filter} onChange={this.filtered} />

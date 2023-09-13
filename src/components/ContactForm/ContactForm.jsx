@@ -14,10 +14,9 @@ export class ContactForm extends Component {
   };
 
   inputValueHandler = e => {
-    const inputName = e.currentTarget.name;
-    const inputValue = e.currentTarget.value;
+    const {name, value} = e.currentTarget
     this.setState({
-      [inputName]: inputValue,
+      [name]: value,
     });
   };
 
